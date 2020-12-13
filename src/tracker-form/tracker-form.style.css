@@ -1,0 +1,15 @@
+.input[type=text] {
+    height: 46px;
+    width: 540px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    border: 1px solid #7f7f7f;
+    outline: none;
+    padding-left: 20px ;
+}
+
+.button{
+    height: 46px;
+    margin-left: -45px;
+    margin-bottom: -18.5px;
+}
