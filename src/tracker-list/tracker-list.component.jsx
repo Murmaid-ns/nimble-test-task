@@ -1,5 +1,6 @@
 import React from "react";
 import './tracker-list.style.css'
+import Stopwatch from "../stopwatch/stopwatch.component";
 
 const TrackerList = ({trackers}) => {
 
@@ -9,7 +10,8 @@ return(
       const {text, time} = todo;
       return(
         <div key={index}>
-          <span>{index+1}) {text} ({time})</span>
+          <span>{index+1}) {text} (<Stopwatch/>)</span>
+
         </div>
       )
     })}

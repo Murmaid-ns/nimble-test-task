@@ -26,9 +26,10 @@ const TrackerForm = ({addTracker}) => {
         type="text"
         className="input"
         value={value}
+        placeholder='Enter tracker name'
         onChange={e => setValue(e.target.value)}
       />
-      <img onClick={handleSubmit} className='button' src={play_circle_filled}/>
+      <img alt='start-btn' onClick={handleSubmit} className='button' src={play_circle_filled}/>
     </form>
   )
 }
