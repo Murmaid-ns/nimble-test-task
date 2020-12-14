@@ -11,7 +11,8 @@ const TrackerForm = ({addTracker}) => {
   const handleSubmit = e => {
     e.preventDefault();
     moment().locale('ru')
-    let time = moment().hour(0).minutes(0).seconds(0).format('hh:mm:ss a');
+    let counter = 0
+    let time = moment().hour(0).minutes(0).seconds( counter++).format('HH:mm:ss');
     if (!value) {
       const currentDate = moment().format('MMMM Do YYYY');
       return addTracker(currentDate, time);
